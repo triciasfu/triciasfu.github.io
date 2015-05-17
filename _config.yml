@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Tricia Fu
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -18,11 +18,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: triciasfu@berkeley.edu
   facebook:
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github: triciasfu
+  instagram:triciasfu
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
