@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Welcome to my personal website!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This website is still underconstruction! Please check back in a couple of weeks :) In the meantime, here is a photo of me at Moraga Steps!
+
+![_config.yml]({{ site.baseurl }}/images/random.jpg)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[triciasfu@berkeley.edu](mailto:triciasfu@berkeley.edu)
