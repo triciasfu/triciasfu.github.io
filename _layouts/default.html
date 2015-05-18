@@ -5,10 +5,6 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -16,37 +12,80 @@
   </head>
 
   <body>
+    <div class="intro_image"></div>
+    <div class="intro_content">
+      <h1 class="intro_title">Tricia Fu</h1>
+      <div class="intro_subtitle">
+        <div class="intro_description">
+          Hiya! This website is STILL IN PROGRESS so please bare with me if you encounter a few bugs!<br><br>
+          <div class="nav-bar">
+            <a class="nav-item" href="#">About</a>
+            <a class="nav-item" href="#">Projects</a>
+            <a class="nav-item" href="#">Experience</a>
+            <a class="nav-item" href="#">Campus Involvement</a>
+            <!-- <a class="nav-item" href="img/resume.pdf" target="_blank">Resume</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" role="main">
+      <div class="about">
+        <h2>About</h2>
+        <p>
+          I'm currently a third year student at UC Berkeley majoring in Electrical Engineering and Computer Science. My interests lie in Software Engineering and Product Management. You can usually find me at one of the 27 libraries at Cal with a chocolate chip cookie in one hand and a non-fat latte in the other. Let's talk!
+        </p>
+      </div>
+      <div class="projects">
+        <h2>Projects</h2>
+        <p>
+          Under construction!
+        </p>
+      </div>
+      <div class="experience">
+        <h2>Experience</h2>
+        <p>
+          Underconstruction!
+        </p>
+      </div>
+      <div class="campus-involvement">
+        <h2>Campus Involvement</h2>
+        <p>
+          Underconstruction!
+        </p>
+      </div>
+    </div>
+
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
+
+        <!-- <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
+
+          <!-- <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
-          </div>
+          </div> -->
 
-          <nav>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <!-- <a href="{{ site.baseurl }}/">Projects</a> -->
+          <!-- <ul class="submenu" id="nav">
+          <li data-target="about">About</li>
+          <li data-target="projects">Projects</li>
+          <li data-target="experience">Experience</li>
+          <li data-target="campus-involvement">Campus Involvement</li>
+          </ul> -->
 
-          </nav>
         </header>
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <!-- <div id="main" role="main" class="container">
       {{ content }}
-    </div>
+    </div> -->
 
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+      <footer class="footer">
+        {% include svg-icons.html %}
+      </footer>
     </div>
-
-    {% include analytics.html %}
   </body>
 </html>
