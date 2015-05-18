@@ -1,10 +1,9 @@
+/** VARIABLES */
 
-//
-// VARIABLES
-//
 
 // Colors
 $blue: #4183C4;
+$teal: #66CCCC;
 
 // Grays
 $black: #000;
@@ -19,6 +18,8 @@ $lightWhite: #FCFBFB;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$raleway: "Raleway", sans-serif;
+$roboto: "Roboto", sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {

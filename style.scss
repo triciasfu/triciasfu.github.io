@@ -8,6 +8,9 @@
 @import "reset";
 @import "variables";
 @import url("http://fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400");
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900");
+@import url("http://fonts.googleapis.com/css?family=Lora:400italic,700italic");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic");
 
 // Syntax highlighting @import is at the bottom of this file
 
@@ -28,13 +31,14 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  // font-family: $helveticaNeue;
+  font-family: $roboto;
   color: $darkerGray;
   font-weight: bold;
 
@@ -72,7 +76,9 @@ p {
 }
 
 a {
-  color: $blue;
+  // color: $blue;
+  color: $teal;
+  font-family: $roboto;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -327,11 +333,13 @@ footer {
 
 .intro_title {
   margin: 0 0 20px;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 4em;
-  font-family: "Playfair Display", Georgia, serif;
+  // font-family: "Playfair Display", Georgia, serif;
+  font-family: $roboto;
+  text-transform: uppercase;
   line-height: 1;
-  color: $lightWhite;
+  color: $white;
 }
 
 .intro_subtitle {
@@ -339,13 +347,16 @@ footer {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  color: $lightWhite
+  color: $white
 }
 
 .intro_description {
   margin: 0 auto 0 1em;
   line-height: 1.2;
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+  // font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: $roboto;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 /** Nav Bar */
@@ -364,10 +375,9 @@ footer {
 }
 
 .nav-item:hover {
-  // border-bottom: 1px solid #000;
-  // border-color: initial;
   color: $white;
 }
+
 /* Fullscreen image */
 .intro_image {
   position: relative;
@@ -382,7 +392,20 @@ footer {
   padding: 0;
 }
 
+/** Descriptions */
+highlight {
+  color: $teal;
+  font-style: italic;
+}
 
+.title {
+  font-family: $roboto;
+}
+
+.description {
+  font-family: $roboto;
+  font-weight: 300;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
