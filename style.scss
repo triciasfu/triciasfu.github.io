@@ -461,6 +461,47 @@ highlight {
 .exp-description {
   padding-top: 30px;
 }
+
+.campus-icon {
+  width: 175px;
+  height: 175px;
+  margin: 0 0 0 40%;
+}
+
+.paw-icon {
+  background: url("/images/paw.png");
+  background-size: cover;
+  // width: 175px;
+  // height: 175px
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.rescomp-icon {
+  background: url("/images/cal.png");
+  background-size: cover;
+  width: 220px;
+}
+
+.paw-icon:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.campus-description {
+  text-align: center;
+}
+
+.nib-icon {
+  background: url("/images/nib.jpg");
+  background-size: cover;
+  width: 488.5px;
+  height: 111px;
+  margin: 0 0 0 30%;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
