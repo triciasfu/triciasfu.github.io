@@ -449,6 +449,18 @@ highlight {
 .white-font {
   color: $white;
 }
+
+.teal-color {
+  color: $teal;
+}
+
+.exp-icon {
+  margin: 0 0 0 25%;
+}
+
+.exp-description {
+  padding-top: 30px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

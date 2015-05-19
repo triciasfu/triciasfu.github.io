@@ -4,7 +4,7 @@
     <!-- <link rel="stylesheet" href="http://www.maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link href="vendor/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="vendor/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -40,25 +40,43 @@
         </p>
       </div>
       <div class="spacer"></div>
+      <div class="spacer-small"></div>
 
 
       <div class="teal-bg">
-        <div class="spacer-small"></div>
+        <div class="spacer"></div>
         <div class="projects container">
           <h1 class="title white-font">Experience</h1>
+          <div class="spacer-small"></div>
           <div class="row">
             <div class="col-md-4">
-              <p>hello</p>
-              <i class="fa fa-linkedin"></i>
+              <span class="fa-stack fa-5x exp-icon">
+                <i class="fa fa-circle fa-stack-2x white-font"></i>
+                <i class="fa fa-linkedin fa-stack-1x teal-color"></i>
+              </span>
             </div>
-            <div class="col-med-8"></div>
+            <div class="col-med-8 exp-description">
+              <p class="description white-font">
+                I am currently a Software Engineering [In]tern at LinkedIn! I will be working on a new recruiting platform under Talent Solutions of Team Money. Some technologies I am currently using are: Play/Scala, Java, Rest.li, Hadoop, and Oracle database.
+              </p>
+            </div>
           </div>
           <div class="spacer"></div>
           <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4"></div>
+            <div class="col-md-8 exp-description">
+              <p class="description white-font">
+                 Last summer, I was a Software Engineering Intern at VISA. Over the course of 12 weeks, I developed a demo Android application using their SDK for mobile merchants to make secure credit card transactions.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <span class="fa-stack fa-5x exp-icon">
+                <i class="fa fa-circle fa-stack-2x white-font"></i>
+                <i class="fa fa-cc-visa fa-stack-1x teal-color"></i>
+              </span>
+            </div>
           </div>
         </div>
+        <div class="spacer"></div>
         <div class="spacer-small"></div>
       </div>
 
