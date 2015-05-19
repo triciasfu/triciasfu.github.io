@@ -7,13 +7,18 @@
     <link href="vendor/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
+  <script src="/vendor/jquery-2.1.4.min.js"></script>
+  <script rel="text/javascript">
+  </script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap.min.js"></script>
   <body>
     <div class="intro_image"></div>
     <div class="intro_content">
@@ -22,10 +27,10 @@
         <div class="intro_description">
           Cal Bear, Coder &amp; Cookie Fanatic
           <div class="nav-bar">
-            <a class="nav-item" href="#">About</a>
-            <a class="nav-item" href="#">Projects</a>
-            <a class="nav-item" href="#">Experience</a>
-            <a class="nav-item" href="#">Campus Involvement</a>
+            <a class="nav-item scroll-on-page-link" href="#about">About</a>
+            <a class="nav-item scroll-on-page-link" href="#experience">Experience</a>
+            <a class="nav-item scroll-on-page-link" href="#campus-involvement">Campus Involvement</a>
+            <a class="nav-item scroll-on-page-link" href="#projects">Projects</a>
             <!-- <a class="nav-item" href="img/resume.pdf" target="_blank">Resume</a> -->
           </div>
         </div>
@@ -115,46 +120,25 @@
         <div class="spacer-small"></div>
         <div class="projects container">
           <h1 class="title white-font">Projects</h1>
-          <div class="row">
+          <p class="description white-font">This section is still underconstruction! Check back in a few days :)</p>
+          <!-- <div class="row">
             <div class="col-md-3 col-sm-6 white-font">Project 1</div>
             <div class="col-md-3 col-sm-6 white-font">Project 2</div>
             <div class="col-md-3 col-sm-6 white-font">Project 3</div>
             <div class="col-md-3 col-sm-6 white-font">Project 4</div>
-          </div>
+          </div> -->
         </div>
         <div class="spacer-small"></div>
       </div>
 
- <!--    <div class="wrapper-masthead">
-      <div class="container">
 
 
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <ul class="submenu" id="nav">
-          <li data-target="about">About</li>
-          <li data-target="projects">Projects</li>
-          <li data-target="experience">Experience</li>
-          <li data-target="campus-involvement">Campus Involvement</li>
-          </ul>
-
-        </header>
-      </div>
-    </div>
- -->
-    <!-- <div id="main" role="main" class="container">
-      {{ content }}
-    </div> -->
 
     <div class="wrapper-footer">
       <footer class="footer">
         {% include svg-icons.html %}
+        <!-- <hr> -->
+        <p class="text-muted">Copyright &copy; Tricia Fu 2015</p>
       </footer>
     </div>
   </body>
