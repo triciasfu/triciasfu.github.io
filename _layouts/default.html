@@ -6,19 +6,13 @@
     <link href="vendor/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-  <script src="/vendor/jquery-2.1.4.min.js"></script>
-  <script rel="text/javascript">
-  </script>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="vendor/bootstrap.min.js"></script>
+
   <body>
     <div class="intro_image"></div>
     <div class="intro_content">
@@ -26,11 +20,11 @@
       <div class="intro_subtitle">
         <div class="intro_description">
           Cal Bear, Coder &amp; Cookie Fanatic <br> (This website is a work in progress! Beware of bugs!)
-          <div class="nav-bar">
-            <a class="nav-item scroll-on-page-link" href="#about">About</a>
-            <a class="nav-item scroll-on-page-link" href="#experience">Experience</a>
-            <a class="nav-item scroll-on-page-link" href="#campus-involvement">Campus Involvement</a>
-            <a class="nav-item scroll-on-page-link" href="#projects">Projects</a>
+          <div class="nav-bar" id="top-nav">
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#experience">Experience</a>
+            <a class="nav-item" href="#campus-involvement">Campus Involvement</a>
+            <a class="nav-item" href="#projects">Projects</a>
             <!-- <a class="nav-item" href="img/resume.pdf" target="_blank">Resume</a> -->
           </div>
         </div>
@@ -38,7 +32,7 @@
     </div>
 
       <div class="spacer"></div>
-      <div class="about container">
+      <div class="container" id="about">
         <h1 class="title">About</h1>
         <p class="description">
           I'm currently a rising senior at the University of California, Berkeley majoring in Electrical Engineering and Computer Science. My interests lie in the intersection of <highlight>software engineering, product management and social impact</highlight>. You can usually find me at 1 of the 27 libraries at Cal with a chocolate chip cookie in one hand and a latte in the other. <highlight>Let's talk!</highlight>
@@ -50,7 +44,7 @@
 
       <div class="teal-bg">
         <div class="spacer"></div>
-        <div class="experience container">
+        <div class="container" id="experience">
           <h1 class="title white-font">Experience</h1>
           <div class="spacer-small"></div>
           <div class="row">
@@ -87,7 +81,7 @@
 
 
       <div class="spacer"></div>
-      <div class="campus-involvement container">
+      <div class="container" id="campus-involvement">
         <h1 class="title">Campus Involvement</h1>
         <div class="campus-icon paw-icon"></div>
         <div class="spacer-small"></div>
@@ -118,7 +112,7 @@
 
       <div class="teal-bg">
         <div class="spacer-small"></div>
-        <div class="projects container">
+        <div class="container" id="projects">
           <h1 class="title white-font">Projects</h1>
           <p class="description white-font">This section is still underconstruction! Check back in a few days :)</p>
           <!-- <div class="row">
@@ -141,5 +135,11 @@
         <p class="text-muted">Copyright &copy; Tricia Fu 2015</p>
       </footer>
     </div>
+
+    <script type="text/javascript" src="vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+
+
   </body>
 </html>
