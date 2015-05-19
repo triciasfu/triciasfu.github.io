@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="http://www.maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="vendor/bootstrap.min.css" rel="stylesheet">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -34,7 +36,7 @@
       <div class="about container">
         <h1 class="title">About</h1>
         <p class="description">
-          I'm currently a rising senior at University of California, Berkeley majoring in Electrical Engineering and Computer Science. My interests lie in the intersection of <highlight>software engineering, product management and social impact</highlight>. You can usually find me at 1 of the 27 libraries at Cal with a chocolate chip cookie in one hand and a non-fat latte in the other. Let's talk!
+          I'm currently a rising senior at the University of California, Berkeley majoring in Electrical Engineering and Computer Science. My interests lie in the intersection of <highlight>software engineering, product management and social impact</highlight>. You can usually find me at 1 of the 27 libraries at Cal with a chocolate chip cookie in one hand and latte in the other. <highlight>Let's talk!</highlight>
         </p>
       </div>
       <div class="spacer"></div>
@@ -43,12 +45,18 @@
       <div class="teal-bg">
         <div class="spacer-small"></div>
         <div class="projects container">
-          <h1 class="title white-font">Projects</h1>
+          <h1 class="title white-font">Experience</h1>
           <div class="row">
-            <div class="col-md-3 col-sm-6 white-font">Project 1</div>
-            <div class="col-md-3 col-sm-6 white-font">Project 2</div>
-            <div class="col-md-3 col-sm-6 white-font">Project 3</div>
-            <div class="col-md-3 col-sm-6 white-font">Project 4</div>
+            <div class="col-md-4">
+              <p>hello</p>
+              <i class="fa fa-linkedin"></i>
+            </div>
+            <div class="col-med-8"></div>
+          </div>
+          <div class="spacer"></div>
+          <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4"></div>
           </div>
         </div>
         <div class="spacer-small"></div>
@@ -57,10 +65,13 @@
 
       <div class="spacer"></div>
       <div class="experience container">
-        <h1 class="title">Experience</h1>
-        <p>
-          Underconstruction!
-        </p>
+        <h1 class="title">Projects</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">Project 1</div>
+            <div class="col-md-3 col-sm-6">Project 2</div>
+            <div class="col-md-3 col-sm-6">Project 3</div>
+            <div class="col-md-3 col-sm-6">Project 4</div>
+          </div>
       </div>
       <div class="spacer"></div>
 
