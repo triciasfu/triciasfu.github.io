@@ -471,8 +471,6 @@ highlight {
 .paw-icon {
   background: url("/images/paw.png");
   background-size: cover;
-  // width: 175px;
-  // height: 175px
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -491,7 +489,7 @@ highlight {
   transform: rotate(360deg);
 }
 
-.campus-description {
+.center {
   text-align: center;
 }
 
@@ -501,6 +499,28 @@ highlight {
   width: 488.5px;
   height: 111px;
   margin: 0 0 0 30%;
+}
+
+.project-title {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-description {
+  font-size: 15px;
+}
+
+.btn-outline {
+  color: $white;
+  background-color: transparent;
+  border-color: $white;
+}
+
+.btn:hover {
+  color: $teal;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
