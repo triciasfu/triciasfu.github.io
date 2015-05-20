@@ -1,15 +1,10 @@
 ---
 ---
 
-//
 // IMPORTS
-//
 
 @import "reset";
 @import "variables";
-@import url("http://fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400");
-@import url("http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900");
-@import url("http://fonts.googleapis.com/css?family=Lora:400italic,700italic");
 @import url("http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700");
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500,500italic,700,700italic,900,900italic");
 
@@ -320,8 +315,8 @@ nav {
   }
 }
 
+// footer
 .wrapper-footer {
-  // margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
@@ -334,88 +329,19 @@ footer {
   text-align: center;
 }
 
-
-
-/** Intro content */
-.intro_content {
-  position: absolute;
-  bottom: 0px;
-  padding: 1.8em;
-  width: 100%;
-  font-size: 1.15em;
+.copyright {
+  font-size: 15px;
 }
 
-.intro_title {
-  margin: 0 0 20px;
-  font-weight: 300;
-  font-size: 4em;
-  // font-family: "Playfair Display", Georgia, serif;
-  // font-family: $roboto;
-  // text-transform: uppercase;
-  line-height: 1;
-  color: $white;
-  font-family: $old-standard-tt;
-  font-style: italic;
-  font-weight: normal;
-  letter-spacing: -0.05em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.footer-icon {
+  color: $teal;
 }
 
-.intro_subtitle {
-  font-size: 20px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  color: $white
-  // font-size: 18px;
+.footer-icon:hover {
+  color: $darkerTeal;
 }
 
-.intro_description {
-  // margin: 0 auto 0 1em;
-  line-height: 1.2;
-  font-size: 20px;
-  // font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-family: $roboto;
-  letter-spacing: 1px;
-  font-weight: 300;
-}
-
-/** Nav Bar */
-.nav-bar {
-  margin-top: 0.5em;
-}
-
-.nav-item {
-  display: inline-block;
-  margin: 0 1em 0 0;
-  padding: 0.2em 0;
-  text-transform: uppercase;
-  white-space: nowrap;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-
-.nav-item:hover {
-  color: $white;
-}
-
-/* Fullscreen image */
-.intro_image {
-  position: relative;
-  width:100%;
-  height:100%;
-  background: url("/images/tricia.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-/** Descriptions */
+// General
 highlight {
   color: $teal;
   font-style: italic;
@@ -436,11 +362,6 @@ highlight {
   font-size: 20px;
 }
 
-//Projects
-.proj-item {
-  width: 333px;
-}
-
 .teal-bg {
   background-color: $teal;
   z-index: -10;
@@ -454,6 +375,81 @@ highlight {
   color: $teal;
 }
 
+// intro content
+.intro_content {
+  position: absolute;
+  bottom: 0px;
+  padding: 1.8em;
+  width: 100%;
+  font-size: 1.15em;
+}
+
+.intro_title {
+  margin: 0 0 20px;
+  font-weight: 300;
+  font-size: 4em;
+  line-height: 1;
+  color: $white;
+  font-family: $old-standard-tt;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.intro_subtitle {
+  font-size: 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  color: $white
+}
+
+.intro_description {
+  // margin: 0 auto 0 1em;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: $roboto;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+// nav bar
+.nav-bar {
+  margin-top: 0.5em;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 1em 0 0;
+  padding: 0.2em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.nav-item:hover {
+  color: $white;
+}
+
+// fullscreen image
+.intro_image {
+  position: relative;
+  width:100%;
+  height:100%;
+  background: url("/images/tricia.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+// experience
 .exp-icon {
   margin: 0 0 0 25%;
 }
@@ -462,6 +458,7 @@ highlight {
   padding-top: 30px;
 }
 
+// campus involvement
 .campus-icon {
   width: 175px;
   height: 175px;
@@ -501,6 +498,7 @@ highlight {
   margin: 0 0 0 30%;
 }
 
+// project
 .project-title {
   font-family: $roboto;
   font-weight: 400;
@@ -526,18 +524,7 @@ highlight {
   border-color: $gray;
 }
 
-.copyright {
-  font-size: 15px;
-}
-
-.footer-icon {
-  color: $teal;
-}
-
-.footer-icon:hover {
-  color: $darkerTeal;
-}
-
+// responsive
 @media (max-width: 1000px) {
   .campus-icon {
     -webkit-transform: scale(0.7,0.7);
