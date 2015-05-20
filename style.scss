@@ -513,14 +513,29 @@ highlight {
   font-size: 15px;
 }
 
-.btn-outline {
+.btn-view {
   color: $white;
   background-color: transparent;
   border-color: $white;
 }
 
-.btn:hover {
+.btn-view:hover,
+.btn-view:focus,
+.btn-view:active {
+  color: $gray;
+  border-color: $gray;
+}
+
+.copyright {
+  font-size: 15px;
+}
+
+.footer-icon {
   color: $teal;
+}
+
+.footer-icon:hover {
+  color: $darkerTeal;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
