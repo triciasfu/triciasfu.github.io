@@ -537,6 +537,35 @@ highlight {
 .footer-icon:hover {
   color: $darkerTeal;
 }
+
+@media (max-width: 1000px) {
+  .campus-icon {
+    -webkit-transform: scale(0.7,0.7);
+    -moz-transform: scale(0.7,0.7);
+    -ms-transform: scale(0.7,0.7);
+    -o-transform: scale(0.7,0.7);
+    transform: scale(0.7,0.7);
+  }
+}
+
+@media (max-width: 600px) {
+  .nib-icon {
+    background: url("/images/nib-small.jpg");
+    background-size: cover;
+    width: 175px;
+    height: 175px;
+  }
+
+  .campus-icon {
+    -webkit-transform: scale(0.7,0.7);
+    -moz-transform: scale(0.7,0.7);
+    -ms-transform: scale(0.7,0.7);
+    -o-transform: scale(0.7,0.7);
+    transform: scale(0.7,0.7);
+  }
+
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
