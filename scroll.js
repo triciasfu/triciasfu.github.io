@@ -1,3 +1,4 @@
+// event.preventDefault();
 $(document).ready(function() {
   function filterPath(string) {
     return string
@@ -24,3 +25,4 @@ $(document).ready(function() {
  }
 });
 });
+
