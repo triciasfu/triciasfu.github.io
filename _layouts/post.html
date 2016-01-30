@@ -1,17 +1,43 @@
----
-layout: default
----
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" type='image/x-icon' />
+  {% include meta.html %}
+  <body>
+    <div class="spacer"></div>
+        <div class="container" id="about">
+          <h1 class="title">{{ page.title }}</h1>
+          <div class="description">
+            {{ content }}
+          </div>
+      </div>
+    <div class="spacer"></div>
+    <div class="wrapper-footer">
+      <footer class="footer">
+        <div class="spacer-small"></div>
+        {% include svg-icons.html %}
+        <div class="spacer-small"></div>
+      </footer>
+    </div>
 
-  <div class="entry">
-    {{ content }}
-  </div>
 
-  <!-- <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div> -->
 
-  {% include disqus.html %}
+
+
+
+    <!-- <h1>{{ page.title }}</h1> -->
+
+  <!--   <div class="entry">
+      {{ content }}
+    </div> -->
+
+    <!-- <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div> -->
+
+  <!-- {% include disqus.html %} -->
+  </body>
 </article>
